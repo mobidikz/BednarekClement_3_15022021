@@ -1,0 +1,19 @@
+{
+  "name": "bednarekclement_3_15022021",
+  "version": "1.0.0",
+  "description": "Projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobidikz/BednarekClement_3_15022021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mobidikz/BednarekClement_3_15022021/issues"
+  },
+  "homepage": "https://github.com/mobidikz/BednarekClement_3_15022021#readme"
+}

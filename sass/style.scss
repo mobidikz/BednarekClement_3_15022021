@@ -1,3 +1,13 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-back-1: #f6f6f6;
+
+a
+{
+    text-decoration:none;
+}
+
 h2
 {
     font-size: 1.6em;
@@ -26,6 +36,7 @@ header
     width: 100%;
     height: 60px;
     box-shadow:  0px 4px 2px rgba(51, 51, 51, 0.43);
+    position: relative;
     z-index: 50;
 }
 
@@ -36,8 +47,9 @@ img
 
 .explorer
 {
+    z-index: 49;
     text-align: center;
-    background-color: #f6f6f6;
+    background-color: $color-back-1;
     height: 335px;
     
     &__btn
@@ -45,9 +57,9 @@ img
         font-family: 'Roboto', sans-serif;
         color: white;
         font-size: 1em;
-        font-weight: 500;
+        font-weight: 600;
         border-radius: 40px;
-        background: linear-gradient(170deg,#eb73da, #a35bdc);;
+        background: linear-gradient(170deg,$color-secondary, $color-primary);;
         width: 55%;
         height: 50px;
         border: none;
@@ -73,7 +85,7 @@ img
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #eaeaea;
+    background-color: $color-back-1;
     color : #353535;
     &__icon
     {
@@ -116,7 +128,7 @@ img
         align-items: center;
         width: 90%;
         height: 76px;
-        background-color: #f6f6f6;
+        background-color: $color-back-1;
         box-shadow: 0px 5px 14px 1px rgba(0, 0, 0, 0.20);
         border-radius: 30px;
         margin-bottom: 20px; 
@@ -125,7 +137,7 @@ img
         {
             .manual__icon
             {
-                color: #9356dc;
+                color: $color-primary;
             }
             background-color: #f5edff;
         }
@@ -141,7 +153,7 @@ img
         line-height: 1.8em;
         font-weight: 500;
         color: white;
-        background-color: #9356dc;
+        background-color: $color-primary;
         border-radius: 30px;
     }
     &__icon
@@ -156,11 +168,35 @@ img
         padding-left: 30px;
         font-size: 1em;
         font-weight: 550;
-    }
-
-    
-    
+    } 
 }
 
+.restaurants
+{
+    h2
+    {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        padding-left: 5px;
+    }
+}
 
+.cards-restaurants
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-restaurant
+{
+    width: 90%;
+    height: 250px;
+    &__image
+    {
+        background-size: cover;
+        height: 60%;  
+    }
+}
 
