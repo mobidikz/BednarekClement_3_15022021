@@ -353,9 +353,12 @@ footer
 
 
 .logo-white{
+    display: block;
     background-image: url("../../images/logo/ohmyfood.png");
     background-size: cover;
-    width: 30%;
-    height: 30%;
+ 
+    width: 100px;
+    height: 50px;
+    
     filter: invert(1);
 }
