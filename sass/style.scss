@@ -261,25 +261,30 @@ img
             .far{
                 position: absolute;
                 bottom: 0;
+                z-index: 0;
+                &:hover + .card-restaurant__container-info__hearth__cube-test{
+                    height: 40px;
+                }
             }
 
             .fas{
-                background: linear-gradient(170deg,$color-secondary, $color-primary);
+                z-index: 1;
+                background: linear-gradient(70deg,$color-secondary, $color-primary);
                 background-clip: text;
                 color: transparent;
             }
 
             &__cube-test{
+                display: flex;
+                align-items: flex-end;
                 position: absolute;
                 bottom: 0;
-                box-sizing: content-box;
-                display: block;
                 width: 40px;
-                height: 40px;
+                height: 0px;
                 overflow: hidden;
                 transition: height 1000ms;
                 &:hover{
-                    height: 0px;
+                    height: 40px;
                 }
             }
 

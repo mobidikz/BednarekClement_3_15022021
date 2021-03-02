@@ -1,0 +1,43 @@
+body
+{
+    background-color: #06181f;
+}
+
+.container
+{
+    position: relative;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .icon
+{
+    width: 200px;
+}
+
+.container .icon path
+{
+    fill: transparent;
+    background: turquoise;
+    stroke-width: 20;
+    stroke: tomato;
+}
+
+.container .icon.heart path 
+{
+    transform-origin: 50% 100%;
+    
+    transition: 1000ms; 
+}
+
+.container .icon.heart:hover path
+{
+   
+   fill: #9356DC;
+
+
+
+
+/* fill: linear-gradient(170deg,blue, pink); */
