@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -50,6 +55,11 @@ img {
   background-color: #f6f6f6;
   height: 335px;
 }
+.explorer p {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
 .explorer__btn {
   display: block;
   font-family: "Roboto", sans-serif;
@@ -84,8 +94,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f6f6f6;
+  background-color: #eaeaea;
   color: #353535;
+  width: 100%;
 }
 .location__icon {
   font-size: 1em;
@@ -244,6 +255,37 @@ img {
   text-align: center;
   line-height: 38px;
   margin: 10px 10px 0 0;
+}
+
+footer {
+  color: white;
+  background: #353535;
+  padding: 25px;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  padding-bottom: 10px;
+  display: flex;
+}
+footer ul i {
+  display: block;
+  width: 30px;
+}
+footer ul a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.logo-white {
+  background-image: url("../../images/logo/ohmyfood.png");
+  background-size: cover;
+  width: 30%;
+  height: 30%;
+  filter: invert(1);
 }
 
 /*# sourceMappingURL=style.css.map */
