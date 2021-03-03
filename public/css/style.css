@@ -39,10 +39,11 @@
 
 @keyframes opem-menu {
   0% {
-    transform: scaleY(0);
+    opacity: 0;
+    transform: translate(0, 1em);
   }
   100% {
-    transform: scaleY(1);
+    opacity: 1;
   }
 }
 * {
@@ -351,22 +352,39 @@ img {
   border-radius: 20px;
   box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
+  animation-fill-mode: backwards;
 }
-.card-menu ol li h3 {
+.card-menu ol h3 {
   display: block;
   width: 100%;
   margin-bottom: -5px;
 }
-.card-menu ol li p {
+.card-menu ol p {
   display: block;
 }
-.card-menu ol li .price {
+.card-menu ol .price {
   margin-right: 10px;
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   font-weight: 600;
   color: #353535;
+}
+
+.anime-line--1 {
+  animation: opem-menu 3000ms;
+  transform-origin: 0% 100%;
+  animation-delay: 200ms;
+}
+.anime-line--2 {
+  animation: opem-menu 3000ms;
+  transform-origin: 0% 100%;
+  animation-delay: 400ms;
+}
+.anime-line--3 {
+  animation: opem-menu 3000ms;
+  transform-origin: 0% 100%;
+  animation-delay: 600ms;
 }
 
 footer {
