@@ -1,3 +1,42 @@
+.hearth {
+  display: block;
+  font-size: 1.8em;
+  padding-right: 20px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.hearth .far-heart {
+  display: block;
+}
+.hearth .far {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+.hearth .far:hover + .cube-test {
+  height: 40px;
+}
+.hearth .fas {
+  z-index: 1;
+  background: linear-gradient(70deg, #FF79DA, #9356DC);
+  background-clip: text;
+  color: transparent;
+}
+.hearth .cube-test {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 0px;
+  overflow: hidden;
+  transition: height 1000ms;
+}
+.hearth .cube-test:hover {
+  height: 40px;
+}
+
 @keyframes opem-menu {
   0% {
     transform: scaleY(0);
@@ -202,45 +241,7 @@ img {
   align-items: center;
   height: 25%;
 }
-.card-restaurant__container-info__hearth {
-  display: block;
-  font-size: 1.8em;
-  padding-right: 20px;
-  position: relative;
-  width: 40px;
-  height: 40px;
-}
-.card-restaurant__container-info__hearth .far-heart {
-  display: block;
-}
-.card-restaurant__container-info__hearth .far {
-  position: absolute;
-  bottom: 0;
-  z-index: 0;
-}
-.card-restaurant__container-info__hearth .far:hover + .card-restaurant__container-info__hearth__cube-test {
-  height: 40px;
-}
-.card-restaurant__container-info__hearth .fas {
-  z-index: 1;
-  background: linear-gradient(70deg, #FF79DA, #9356DC);
-  background-clip: text;
-  color: transparent;
-}
-.card-restaurant__container-info__hearth__cube-test {
-  display: flex;
-  align-items: flex-end;
-  position: absolute;
-  bottom: 0;
-  width: 40px;
-  height: 0px;
-  overflow: hidden;
-  transition: height 1000ms;
-}
-.card-restaurant__container-info__hearth__cube-test:hover {
-  height: 40px;
-}
-.card-restaurant__container-info__description {
+.card-restaurant__description {
   display: block;
 }
 .card-restaurant__image {

@@ -37,7 +37,8 @@ $color-back-1: #f6f6f6;
     line-height: 38px;
 }
 
-@mixin hearth {
+
+.hearth{
     display: block;
     font-size: 1.8em;
     padding-right: 20px;
@@ -66,7 +67,7 @@ $color-back-1: #f6f6f6;
         color: transparent;
     }
 
-    &__cube-test{
+    .cube-test{
         display: flex;
         align-items: flex-end;
         position: absolute;
@@ -312,55 +313,14 @@ img
         justify-content: space-between;
         align-items: center;
         height: 25%;
-        &__hearth{
-            display: block;
-            font-size: 1.8em;
-            padding-right: 20px;
-            position: relative;
-            width: 40px;
-            height: 40px;
-
-            .far-heart{
-                display: block;
-                
-            }
-
-            .far{
-                position: absolute;
-                bottom: 0;
-                z-index: 0;
-                &:hover + .card-restaurant__container-info__hearth__cube-test{
-                    height: 40px;
-                }
-            }
-
-            .fas{
-                z-index: 1;
-                background: linear-gradient(70deg,$color-secondary, $color-primary);
-                background-clip: text;
-                color: transparent;
-            }
-
-            &__cube-test{
-                display: flex;
-                align-items: flex-end;
-                position: absolute;
-                bottom: 0;
-                width: 40px;
-                height: 0px;
-                overflow: hidden;
-                transition: height 1000ms;
-                &:hover{
-                    height: 40px;
-                }
-            }
+        // lààà
 
           
         }
         &__description{
             display: block;
         }
-    }
+    
     &__image
     {
         display: block;
