@@ -120,7 +120,7 @@ img {
   border: none;
   box-shadow: 0px 5px 14px 1px rgba(0, 0, 0, 0.2);
   filter: brightness(100%);
-  transition: box-shadow 100ms, filter 130ms;
+  transition: box-shadow 800ms, filter 1100ms;
 }
 .explorer__btn:hover {
   box-shadow: 0px 7px 20px 10px rgba(0, 0, 0, 0.2);
@@ -282,10 +282,13 @@ img {
   align-items: center;
 }
 .cards-menu__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   z-index: 2;
   border-radius: 55px 55px 0 0;
   margin-top: -55px;
-  background-color: white;
+  background-color: #f6f6f6;
   width: 100%;
 }
 .cards-menu__name h1 {
@@ -294,8 +297,8 @@ img {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
   font-size: 1.8em;
-  line-height: 100px;
-  padding-left: 15px;
+  line-height: 120px;
+  padding-left: 20px;
 }
 .cards-menu__btn-menu {
   display: block;
@@ -310,12 +313,60 @@ img {
   border: none;
   box-shadow: 0px 5px 14px 1px rgba(0, 0, 0, 0.2);
   filter: brightness(100%);
-  transition: box-shadow 100ms, filter 130ms;
+  transition: box-shadow 800ms, filter 1100ms;
   margin: 30px 0 80px 0;
 }
 .cards-menu__btn-menu:hover {
   box-shadow: 0px 7px 20px 10px rgba(0, 0, 0, 0.2);
   filter: brightness(120%);
+}
+
+.card-menu {
+  width: 100%;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+.card-menu h2 {
+  display: block;
+  font-weight: 400;
+  font-size: 1.1em;
+  width: 93%;
+  margin-bottom: 30px;
+}
+.card-menu ol {
+  list-style: none;
+  width: 93%;
+}
+.card-menu ol li {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+.card-menu ol li h3 {
+  display: block;
+  width: 100%;
+  margin-bottom: -5px;
+}
+.card-menu ol li p {
+  display: block;
+}
+.card-menu ol li .price {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: #353535;
 }
 
 footer {
