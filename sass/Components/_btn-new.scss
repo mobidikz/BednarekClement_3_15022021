@@ -1,0 +1,11 @@
+// Mixins :
+@mixin btn_new{
+    display: block;
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, $amount: 40);
+    width: 25%;
+    height: 20%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 38px;
+}

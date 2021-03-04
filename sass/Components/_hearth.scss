@@ -1,0 +1,43 @@
+.hearth{
+    display: block;
+    font-size: 1.8em;
+    padding-right: 20px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    .far-heart{
+        display: block;
+        
+    }
+
+    .far{
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        &:hover + .cube-test{
+            height: 40px;
+        }
+    }
+
+    .fas{
+        z-index: 1;
+        background: linear-gradient(70deg,$color-secondary, $color-primary);
+        background-clip: text;
+        color: transparent;
+    }
+
+    .cube-test{
+        display: flex;
+        align-items: flex-end;
+        position: absolute;
+        bottom: 0;
+        width: 40px;
+        height: 0px;
+        overflow: hidden;
+        transition: height 1000ms;
+        &:hover{
+            height: 40px;
+        }
+    }
+}

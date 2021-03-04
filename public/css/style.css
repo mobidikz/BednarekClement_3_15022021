@@ -1,3 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 700;
+  margin: 10px;
+  margin-bottom: 4px;
+}
+
+p {
+  font-size: 0.9em;
+  font-weight: 200;
+  margin: 10px;
+  margin-top: 0;
+}
+
+body {
+  max-width: 375px;
+  font-family: "Roboto", sans-serif;
+}
+
 .hearth {
   display: block;
   font-size: 1.8em;
@@ -37,46 +70,38 @@
   height: 40px;
 }
 
-@keyframes opem-menu {
-  0% {
-    opacity: 0;
-    transform: translate(0, 1em);
-  }
-  100% {
-    opacity: 1;
-  }
+footer {
+  color: white;
+  background: #353535;
+  padding: 25px;
 }
-* {
-  margin: 0;
-  padding: 0;
+footer ul {
+  list-style: none;
 }
-
-a {
+footer ul li {
+  padding-bottom: 10px;
+  display: flex;
+}
+footer ul i {
+  display: block;
+  width: 30px;
+}
+footer ul a {
+  display: block;
+  color: white;
   text-decoration: none;
+  font-style: normal;
 }
 
-h2 {
-  font-size: 1.6em;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 1em;
-  font-weight: 700;
-  margin: 10px;
-  margin-bottom: 4px;
-}
-
-p {
-  font-size: 0.9em;
-  font-weight: 200;
-  margin: 10px;
-  margin-top: 0;
-}
-
-body {
-  max-width: 375px;
-  font-family: "Roboto", sans-serif;
+.logo-white {
+  display: block;
+  background-image: url("../../images/logo/ohmyfood.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  width: 100px;
+  height: 20px;
+  filter: invert(1);
 }
 
 header {
@@ -267,6 +292,15 @@ img {
   margin: 10px 10px 0 0;
 }
 
+@keyframes opem-menu {
+  0% {
+    opacity: 0;
+    transform: translate(0, 1em);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .image-a-la-francaise {
   background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: cover;
@@ -385,40 +419,6 @@ img {
   animation: opem-menu 3000ms;
   transform-origin: 0% 100%;
   animation-delay: 600ms;
-}
-
-footer {
-  color: white;
-  background: #353535;
-  padding: 25px;
-}
-footer ul {
-  list-style: none;
-}
-footer ul li {
-  padding-bottom: 10px;
-  display: flex;
-}
-footer ul i {
-  display: block;
-  width: 30px;
-}
-footer ul a {
-  display: block;
-  color: white;
-  text-decoration: none;
-  font-style: normal;
-}
-
-.logo-white {
-  display: block;
-  background-image: url("../../images/logo/ohmyfood.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-bottom: 30px;
-  width: 100px;
-  height: 20px;
-  filter: invert(1);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+// Footer:
+footer
+{
+    color: white;
+    background: #353535;
+    padding: 25px;
+    
+    & ul{
+        list-style:none;
+        & li{
+            padding-bottom: 10px;
+            display: flex;
+            
+        }
+
+        & i{
+            display: block;
+            width: 30px;
+        }
+
+        & a{
+            display: block;
+            color: white;
+            text-decoration:none;
+            font-style: normal;
+        }
+    }
+
+}
+
+
+.logo-white{
+    display: block;
+    background-image: url("../../images/logo/ohmyfood.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+ 
+    width: 100px;
+    height: 20px;
+    
+    filter: invert(1);
+}

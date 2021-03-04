@@ -1,0 +1,117 @@
+//Keyframes
+@keyframes opem-menu{
+    0% {
+        opacity: 0;
+        transform: translate(0, 1em);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.image-a-la-francaise{
+    background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 270px;
+    z-index: 1;
+}
+
+
+.cards-menu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__name{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+        border-radius: 55px 55px 0 0;
+        margin-top: -55px;
+        background-color: $color-back-1;
+        width: 100%;
+            & h1{
+                
+                display: block;
+                height: 100px;
+                font-family: 'Shrikhand', cursive;
+                font-weight: 400;
+                font-size: 1.8em;
+                line-height: 120px;
+                padding-left: 20px;
+            }
+    }
+
+    &__btn-menu{
+        @include btn;
+        margin: 30px 0 80px 0;
+    }
+}
+
+.card-menu{
+    width: 100%;
+    background-color: $color-back-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    & h2{
+        display: block; 
+        font-weight: 400;
+        font-size: 1.1em;
+        width: 93%;
+        margin-bottom: 30px; 
+    }
+
+    & ol{
+        list-style:none;
+        width: 93%;
+        & li{
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 70px;
+            border-radius: 20px;
+            box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            animation-fill-mode: backwards;
+            
+            }
+
+            & h3{
+                display: block;
+                width: 100%;
+                margin-bottom: -5px;
+                
+            }
+            & p{
+                display: block; 
+            }
+            & .price{
+                margin-right: 10px;
+                margin-bottom: 10px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1em;
+                font-weight: 600;
+                color: #353535;
+            }
+        }
+    
+}
+
+.anime-line{
+    @for $i from 1 through 3 {
+        &--#{$i} {
+            animation: opem-menu $anim-dur;
+            transform-origin: 0% 100%;
+            animation-delay: $anim-delay * $i;
+         }
+    } 
+}
