@@ -1,3 +1,80 @@
+
+//Loader
+.loader
+{
+    
+    position: absolute;
+    z-index: 60;
+    height: 2400px; //remettre 100% si js ok
+    max-width: 375px;
+    width: 100%;
+    background: linear-gradient(85deg,$color-secondary, $color-primary); //remettre 170 si js ok
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    opacity: 0;
+    transition: opacity 1s 200s ease-out;
+
+
+    &__logo
+    {
+        
+        background-image: url("../../images/logo/ohmyfood.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 60%;
+        height: 30px;
+        filter: invert(1);
+
+        margin-top : 30px;
+        margin-bottom: 350px;
+
+        
+    }
+    &__animation
+    {
+        
+        display: flex;
+      
+        font-size: 3em;
+        animation: loader 1.5s linear infinite;
+
+        &__pepper--1{
+            animation-delay: 0.2s;
+        }
+
+        &__pepper--2{
+            animation-delay: 0.4s;
+        }
+
+        &__pepper--3{
+            animation-delay: 0.6s;
+
+        }
+    }
+}
+
+@keyframes loader{
+    0% {
+        color: white;
+        text-shadow: 0 0 7px white;
+    }
+
+    90% {
+        color: rgb(228, 228, 228);;
+        text-shadow: none;
+    }
+
+    100%{
+        color: white;
+        text-shadow: 0 0 7px white;
+    }
+}
+
+//Index page
 img
 {
     width: 45%;
