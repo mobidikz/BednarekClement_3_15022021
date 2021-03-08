@@ -4,7 +4,9 @@
 }
 
 a {
+  color: black;
   text-decoration: none;
+  font-style: normal;
 }
 
 h2 {
@@ -113,6 +115,11 @@ header {
   box-shadow: 0px 4px 2px rgba(51, 51, 51, 0.43);
   position: relative;
   z-index: 50;
+}
+header a {
+  position: absolute;
+  width: 90%;
+  font-size: 1.2em;
 }
 
 .loader {
@@ -476,16 +483,24 @@ img {
   box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
   animation-fill-mode: backwards;
+  overflow: hidden;
 }
-.card-menu ol h3 {
+.card-menu ol li:hover > .box-select {
+  transform: scale(1);
+  width: 70px;
+}
+.card-menu ol li:hover > .box-select > .box-select__cercle {
+  animation: 0.8s ease-in 1 forwards alternate-reverse v-rotate;
+}
+.card-menu ol li h3 {
   display: block;
-  width: 100%;
-  margin-bottom: -5px;
+  width: 70%;
 }
-.card-menu ol p {
+.card-menu ol li p {
   display: block;
+  text-overflow: ellipsis;
 }
-.card-menu ol .price {
+.card-menu ol li .price {
   margin-right: 10px;
   margin-bottom: 10px;
   font-family: "Roboto", sans-serif;
@@ -513,6 +528,37 @@ img {
   animation: opem-menu 3000ms;
   transform-origin: 0% 100%;
   animation-delay: 800ms;
+}
+
+.box-select {
+  width: 0px;
+  height: 70px;
+  background-color: #99E2D0;
+  transition: width 330ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-select__cercle {
+  color: white;
+  font-size: 2em;
+}
+
+@keyframes select {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(70px);
+  }
+}
+@keyframes v-rotate {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(-2turn);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
