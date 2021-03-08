@@ -126,8 +126,7 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  opacity: 0;
-  transition: opacity 1s 200s ease-out;
+  animation: loader-back 1s 3s ease-out forwards;
 }
 .loader__logo {
   background-image: url("../../images/logo/ohmyfood.png");
@@ -155,6 +154,19 @@ header {
   animation-delay: 0.6s;
 }
 
+@keyframes loader-back {
+  0% {
+    opacity: 1;
+    scale: 1;
+  }
+  99% {
+    opacity: 0;
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+  }
+}
 @keyframes loader {
   0% {
     color: white;
