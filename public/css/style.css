@@ -148,7 +148,10 @@ header a {
 }
 .loader__animation {
   display: flex;
-  font-size: 3em;
+}
+.loader__animation__pepper {
+  color: white;
+  font-size: 1.8em;
   animation: loader 1.5s linear infinite;
 }
 .loader__animation__pepper--1 {

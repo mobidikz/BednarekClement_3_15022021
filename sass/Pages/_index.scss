@@ -37,8 +37,11 @@
         
         display: flex;
       
-        font-size: 3em;
-        animation: loader 1.5s linear infinite;
+        &__pepper{
+            color: white;
+            font-size: 1.8em;
+            animation: loader 1.5s linear infinite;
+        }
 
         &__pepper--1{
             animation-delay: 0.2s;
