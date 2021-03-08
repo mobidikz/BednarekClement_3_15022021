@@ -474,7 +474,6 @@ img {
 .card-menu ol li {
   background-color: white;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -494,19 +493,30 @@ img {
 }
 .card-menu ol li h3 {
   display: block;
-  width: 70%;
+  width: 100%;
 }
 .card-menu ol li p {
   display: block;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .card-menu ol li .price {
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-top: 25px;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   font-weight: 600;
   color: #353535;
+}
+
+.text-menu {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  flex-grow: 1;
 }
 
 .anime-line--1 {
