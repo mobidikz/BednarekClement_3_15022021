@@ -29,8 +29,15 @@ p {
 }
 
 body {
-  max-width: 375px;
+  max-width: 1200px;
+  min-width: 230px;
   font-family: "Roboto", sans-serif;
+}
+@media (min-width: 1200px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .hearth {
@@ -77,12 +84,30 @@ footer {
   background: #353535;
   padding: 25px;
 }
+@media (min-width: 1200px) {
+  footer {
+    display: flex;
+  }
+}
 footer ul {
   list-style: none;
+}
+@media (min-width: 778px) {
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 footer ul li {
   padding-bottom: 10px;
   display: flex;
+}
+@media (min-width: 1200px) {
+  footer ul li {
+    margin: 0 0 0 35px;
+    padding: 0;
+    align-items: center;
+  }
 }
 footer ul i {
   display: block;
@@ -100,10 +125,24 @@ footer ul a {
   background-image: url("../../../images/logo/ohmyfood.png");
   background-size: contain;
   background-repeat: no-repeat;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0px;
   width: 100px;
   height: 20px;
   filter: invert(1);
+}
+@media (min-width: 778px) {
+  .logo-white {
+    width: 170px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .logo-white {
+    height: 30px;
+    margin: 0 140px 0 90px;
+  }
 }
 
 header {
@@ -116,17 +155,27 @@ header {
   position: relative;
   z-index: 50;
 }
+@media (min-width: 778px) {
+  header {
+    height: 100px;
+  }
+}
 header a {
   position: absolute;
   width: 90%;
   font-size: 1.2em;
+}
+@media (min-width: 778px) {
+  header a {
+    font-size: 2em;
+  }
 }
 
 .loader {
   position: absolute;
   z-index: 60;
   height: 2400px;
-  max-width: 375px;
+  max-width: 100%;
   width: 100%;
   background: linear-gradient(85deg, #FF79DA, #9356DC);
   display: flex;
@@ -194,6 +243,11 @@ header a {
 img {
   width: 45%;
 }
+@media (min-width: 1200px) {
+  img {
+    width: 25%;
+  }
+}
 
 .explorer {
   display: flex;
@@ -223,6 +277,11 @@ img {
   box-shadow: 0px 5px 14px 1px rgba(0, 0, 0, 0.2);
   filter: brightness(100%);
   transition: box-shadow 800ms, filter 1100ms;
+}
+@media (min-width: 1200px) {
+  .explorer__btn {
+    width: 20%;
+  }
 }
 .explorer__btn:hover {
   box-shadow: 0px 7px 20px 10px rgba(0, 0, 0, 0.2);
@@ -383,6 +442,11 @@ img {
   height: 270px;
   z-index: 1;
 }
+@media (min-width: 1200px) {
+  .image-a-la-francaise {
+    height: 340px;
+  }
+}
 
 .image-la-note-enchantee {
   background-image: url("../../../images/restaurants/la-note-enchantee.jpg");
@@ -390,6 +454,11 @@ img {
   width: 100%;
   height: 270px;
   z-index: 1;
+}
+@media (min-width: 1200px) {
+  .image-la-note-enchantee {
+    height: 340px;
+  }
 }
 
 .image-la-palette-du-gout {
@@ -399,6 +468,11 @@ img {
   height: 270px;
   z-index: 1;
 }
+@media (min-width: 1200px) {
+  .image-la-palette-du-gout {
+    height: 340px;
+  }
+}
 
 .image-le-delice-des-sens {
   background-image: url("../../../images/restaurants/le-delice-des-sens.jpg");
@@ -407,6 +481,11 @@ img {
   height: 270px;
   z-index: 1;
 }
+@media (min-width: 1200px) {
+  .image-le-delice-des-sens {
+    height: 340px;
+  }
+}
 
 .cards-menu {
   width: 100%;
@@ -414,6 +493,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f6f6f6;
 }
 .cards-menu__name {
   display: flex;
@@ -424,6 +504,9 @@ img {
   margin-top: -55px;
   background-color: #f6f6f6;
   width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .cards-menu__name h1 {
   display: block;
@@ -433,6 +516,9 @@ img {
   font-size: 1.8em;
   line-height: 120px;
   padding-left: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .cards-menu__btn-menu {
   display: block;
@@ -450,9 +536,20 @@ img {
   transition: box-shadow 800ms, filter 1100ms;
   margin: 30px 0 80px 0;
 }
+@media (min-width: 1200px) {
+  .cards-menu__btn-menu {
+    width: 20%;
+  }
+}
 .cards-menu__btn-menu:hover {
   box-shadow: 0px 7px 20px 10px rgba(0, 0, 0, 0.2);
   filter: brightness(120%);
+}
+
+.container-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card-menu {
@@ -462,6 +559,11 @@ img {
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
+}
+@media (min-width: 1200px) {
+  .card-menu {
+    width: 33%;
+  }
 }
 .card-menu h2 {
   display: block;
@@ -479,7 +581,7 @@ img {
 }
 .card-menu__underline-box__underline {
   display: block;
-  width: 10%;
+  width: 40px;
   height: 4px;
   background-color: #99E2D0;
   border: none;

@@ -34,8 +34,15 @@ p
 
 body
 {
-    max-width: 375px;
+    max-width: 1200px;
+    min-width: 230px;
     
 
     font-family: 'Roboto', sans-serif;
+
+    @media (min-width: 1200px){
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

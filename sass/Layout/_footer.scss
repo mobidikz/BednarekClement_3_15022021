@@ -4,12 +4,26 @@ footer
     color: white;
     background: #353535;
     padding: 25px;
+    @media (min-width: 1200px){
+        display: flex;
+    }
+    
     
     & ul{
         list-style:none;
+        @media (min-width: 778px){
+            display: flex;
+            justify-content: space-between;
+        }
         & li{
             padding-bottom: 10px;
             display: flex;
+            @media (min-width: 1200px){
+                margin: 0 0 0 35px;
+                padding: 0;
+                align-items: center;
+            }
+            
             
         }
 
@@ -34,10 +48,22 @@ footer
     background-image: url("../../../images/logo/ohmyfood.png");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-bottom: 30px;
+    margin: 0 0 30px 0px;
  
     width: 100px;
     height: 20px;
     
     filter: invert(1);
+
+    @media (min-width: 778px){
+        width: 170px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media (min-width: 1200px){
+        
+        height: 30px;
+        margin: 0 140px 0 90px;
+    }
 }

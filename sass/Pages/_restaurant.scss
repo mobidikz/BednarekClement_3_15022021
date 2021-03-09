@@ -17,6 +17,9 @@
         width: 100%;
         height: 270px;
         z-index: 1;
+        @media (min-width: 1200px){
+            height: 340px;
+        }
     }
 }
 
@@ -28,6 +31,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: $color-back-1;
 
     &__name{
         display: flex;
@@ -65,6 +69,11 @@
 }
 
 //Card
+.container-card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 .card-menu{
     width: 100%;
     background-color: $color-back-1;
@@ -72,6 +81,9 @@
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
+    @media (min-width: 1200px){
+        width: 33%;
+    }
     & h2{
         display: block; 
         font-weight: 400;
@@ -100,6 +112,7 @@
     & ol{
         list-style:none;
         width: 93%;
+
         & li{
             background-color: white;
             display: flex;

@@ -6,7 +6,7 @@
     position: absolute;
     z-index: 60;
     height: 2400px; //remettre 100% si js ok
-    max-width: 375px;
+    max-width: 100%;
     width: 100%;
     background: linear-gradient(85deg,$color-secondary, $color-primary); //remettre 170 si js ok
     display: flex;
@@ -96,6 +96,9 @@
 img
 {
     width: 45%;
+    @media (min-width: 1200px){
+        width: 25%;
+    }
 }
 
 .explorer
