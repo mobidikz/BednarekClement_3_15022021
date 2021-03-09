@@ -12,7 +12,7 @@
 //Images
 @each $image in $images{
     .image-#{$image}{
-        background-image: url("../../images/restaurants/#{$image}.jpg");
+        background-image: url("../../../images/restaurants/#{$image}.jpg");
         background-size: cover;
         width: 100%;
         height: 270px;
@@ -70,7 +70,24 @@
         font-weight: 400;
         font-size: 1.1em;
         width: 93%;
-        margin-bottom: 30px; 
+        margin-bottom: 5px; 
+    }
+
+    &__underline-box{
+        width: 93%;
+        height: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        &__underline{
+            display: block; 
+            width: 10%;
+            height: 4px;
+            background-color: $color-tertiary;
+            border: none;
+        }
+
     }
 
     & ol{
@@ -97,7 +114,7 @@
                     // animation: 0.8s ease-in 1 forwards select;
                     // animation-fill-mode: both;
                    
-                    width: 70px;
+                    width: 72px;
                     & > .box-select__cercle{
                     animation: 0.8s ease-in 1 forwards alternate-reverse v-rotate;
                     }
