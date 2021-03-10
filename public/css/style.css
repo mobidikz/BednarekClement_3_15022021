@@ -315,8 +315,21 @@ img {
   font-weight: 600;
 }
 
+@media (min-width: 1200px) {
+  .container-manual {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 .manual {
   height: 440px;
+}
+@media (min-width: 1200px) {
+  .manual {
+    height: 180px;
+  }
 }
 .manual h2 {
   padding-top: 40px;
@@ -331,6 +344,14 @@ img {
   margin-left: 0;
   padding-left: 0;
 }
+@media (min-width: 1200px) {
+  .manual ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+  }
+}
 .manual li {
   display: flex;
   align-items: center;
@@ -340,6 +361,12 @@ img {
   box-shadow: 0px 5px 14px 1px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
   margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .manual li {
+    display: flex;
+    width: 30%;
+  }
 }
 .manual li:last-child {
   background-color: #f5edff;
@@ -384,6 +411,13 @@ img {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1200px) {
+  .cards-restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 
 .card-restaurant {
   display: block;
@@ -394,6 +428,11 @@ img {
   border-radius: 20px;
   box-shadow: 0px 5px 14px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 40px;
+}
+@media (min-width: 1200px) {
+  .card-restaurant {
+    width: 40%;
+  }
 }
 .card-restaurant__container-info {
   display: block;
