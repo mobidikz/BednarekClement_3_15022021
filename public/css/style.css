@@ -178,7 +178,6 @@ header a {
 }
 
 .loader {
-  position: absolute;
   z-index: 60;
   height: 100%;
   width: 100%;
@@ -188,8 +187,10 @@ header a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  opacity: 0;
+  scale: 0;
   margin: 0;
-  animation: loader-back 1s 3s ease-out forwards;
+  animation: loader-back 1s 3s ease-out both;
 }
 .loader__logo {
   background-image: url("../../../images/logo/ohmyfood.png");
@@ -231,6 +232,8 @@ header a {
   }
   100% {
     scale: 0;
+    opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes loader {
