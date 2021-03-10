@@ -23,7 +23,7 @@
     .fas{
         z-index: 1;
         background: linear-gradient(70deg,$color-secondary, $color-primary);
-        background-clip: text;
+        background-clip: text; //fonctionnel mais ne passe pas au w3c
         color: transparent;
     }
 

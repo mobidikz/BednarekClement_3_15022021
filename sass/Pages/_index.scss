@@ -13,8 +13,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    opacity: 0;
-    scale: 0;
+
 
     margin: 0;
 
@@ -65,17 +64,17 @@
 @keyframes loader-back{
     0% {
         opacity: 1;
-        scale: 1;
+        
 
     }
 
     99% {
         opacity: 0;
-        scale: 1;
+        
     }
 
     100%{
-        scale: 0;
+        
         opacity: 0;
         z-index: -1;
     }
@@ -265,7 +264,7 @@ img
         text-align: center;
         padding-left: 30px;
         font-size: 1em;
-        font-weight: 550;
+        font-weight: 500;
     } 
 }
 
