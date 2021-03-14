@@ -307,7 +307,7 @@ img
     @media (min-width: 1200px){
         width: 40%;
     }
-    @media (min-width: 778px){
+    @media (min-width: 778px) and (max-width : 1199px){
         width: 65%;
     }
     &__container-info {

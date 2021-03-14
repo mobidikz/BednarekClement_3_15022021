@@ -1,6 +1,8 @@
 *{
     margin : 0;
     padding: 0;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 a
@@ -35,18 +37,18 @@ p
 .size-max{
     max-width: 1200px;
     min-width: 230px;
-    width: 100%;    
-}
-
-body
-{   
-    display: flex;
-    justify-content: center;
-
-    font-family: 'Roboto', sans-serif;
+    width: 100%;  
     @media (min-width: 1200px){    
         margin-left: auto;
         margin-right: auto;
-    }
+    }  
+}
+
+.general_container
+{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     
 }
